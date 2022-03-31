@@ -1,9 +1,11 @@
 package army;
 
-public class Grenade {
+
+public class Grenade implements IExplosives {
 	
 	private double blastRadius;
 	private String type;
+	private int time;
 	
 	public double getBlastRadius() {
 		return blastRadius;
@@ -20,9 +22,22 @@ public class Grenade {
 	
 	public Grenade() {}
 	
-	public Grenade(double blastRadius, String type) {
+	public Grenade(double blastRadius, String type,int time) {
 		this.blastRadius = blastRadius;
 		this.type = type;
+		this.time = time;
+	}
+	
+	@Override
+	public String countdown(int time) {
+		long start = System.currentTimeMillis();
+		long end = start + time*1000; // time in seconds * 1000 ms/sec
+		while (System.currentTimeMillis() < end){}
+		return "Boom" ;
+	}
+	@Override
+	public int damage(int radius, int type) {
+		return radius*type;
 	}
 
 	

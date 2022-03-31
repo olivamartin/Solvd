@@ -1,31 +1,24 @@
 package army;
 
-public class AssaultRifle {
+public class AssaultRifle extends Weapon {
 	
-	private int magazineCapacity;
-	private int range;
-	
-	public int getMagazineCapacity() {
-		return magazineCapacity;
+	private String rifleType;
+
+	public String getRifleType() {
+		return rifleType;
 	}
-	public void setMagazineCapacity(int magazineCapacity) {
-		this.magazineCapacity = magazineCapacity;
+
+	public void setRifleType(String rifleType) {
+		this.rifleType = rifleType;
 	}
-	public int getRange() {
-		return range;
+
+	public AssaultRifle() {
+		super();
 	}
-	public void setRange(int range) {
-		this.range = range;
+
+	public AssaultRifle(int magazineCapacity, int range, int weight, String rifleType) {
+		super(magazineCapacity, range, weight);
+		this.rifleType = rifleType;
 	}
-	
-	public AssaultRifle() {}
-	
-	public AssaultRifle(int magazineCapacity, int range) {
-		this.magazineCapacity = magazineCapacity;
-		this.range = range;
-	}
-	
-	
-	
 
 }
