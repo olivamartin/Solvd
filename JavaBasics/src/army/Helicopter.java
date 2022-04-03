@@ -1,9 +1,9 @@
 package army;
 
-public class Helicopter {
+public class Helicopter extends Vehicle {
 	
 	private int numberOfRotors;
-	private int fuelCapacity;
+
 	
 	public int getNumberOfRotors() {
 		return numberOfRotors;
@@ -11,18 +11,14 @@ public class Helicopter {
 	public void setNumberOfRotors(int numberOfRotors) {
 		this.numberOfRotors = numberOfRotors;
 	}
-	public int getFuelCapacity() {
-		return fuelCapacity;
-	}
-	public void setFuelCapacity(int fuelCapacity) {
-		this.fuelCapacity = fuelCapacity;
+
+	public Helicopter() {
+		super();
 	}
 	
-	public Helicopter() {}
-	
-	public Helicopter(int numberOfRotors, int fuelCapacity) {
+	public Helicopter(int maxSpeed, int capacity, int fuelCapacity,int numberOfRotors) {
+		super(maxSpeed, capacity, fuelCapacity);
 		this.numberOfRotors = numberOfRotors;
-		this.fuelCapacity = fuelCapacity;
 	}
 	
 	

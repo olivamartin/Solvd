@@ -1,35 +1,24 @@
 package army;
 
-public class Tank {
+public class Tank extends Vehicle {
 	
 	private String type;
-	private int maxSpeed;
-	private int capacity;
+	
 	public String getType() {
 		return type;
 	}
+
 	public void setType(String type) {
 		this.type = type;
 	}
-	public int getMaxSpeed() {
-		return maxSpeed;
-	}
-	public void setMaxSpeed(int maxSpeed) {
-		this.maxSpeed = maxSpeed;
-	}
-	public int getCapacity() {
-		return capacity;
-	}
-	public void setCapacity(int capacity) {
-		this.capacity = capacity;
+
+	public Tank() {
+		super();
 	}
 	
-	public Tank() {}
-	
-	public Tank(String type, int maxSpeed, int capacity) {
+	public Tank(int maxSpeed, int capacity, int fuelCapacity, String type) {
+		super(maxSpeed, capacity, fuelCapacity);
 		this.type = type;
-		this.maxSpeed = maxSpeed;
-		this.capacity = capacity;
 	}
 	
 	

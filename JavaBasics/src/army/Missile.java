@@ -1,6 +1,6 @@
 package army;
 
-public class Missile {
+public class Missile implements IExplosives {
 	
 	private int speed;
 	private int range;
@@ -31,6 +31,17 @@ public class Missile {
 		this.speed = speed;
 		this.range = range;
 		this.blastRadius = blastRadius;
+	}
+	@Override
+	public String countdown(int time) {
+		long start = System.currentTimeMillis();
+		long end = start + time*1000; // time in seconds * 1000 ms/sec
+		while (System.currentTimeMillis() < end){}
+		return "Kaboom" ;
+	}
+	@Override
+	public int damage(int radius, int type) {
+		return (radius^2)*type;
 	}
 	
 	

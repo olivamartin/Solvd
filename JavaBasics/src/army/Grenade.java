@@ -16,6 +16,12 @@ public class Grenade implements IExplosives {
 	public String getType() {
 		return type;
 	}
+	public int getTime() {
+		return time;
+	}
+	public void setTime(int time) {
+		this.time = time;
+	}
 	public void setType(String type) {
 		this.type = type;
 	}

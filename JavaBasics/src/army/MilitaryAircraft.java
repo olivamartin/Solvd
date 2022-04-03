@@ -1,17 +1,12 @@
 package army;
 
-public class MilitaryAircraft {
+public class MilitaryAircraft extends Vehicle {
 	
-	private int maxSpeed;
+
 	private String type;
 	private int numberOfEngines;
+
 	
-	public int getMaxSpeed() {
-		return maxSpeed;
-	}
-	public void setMaxSpeed(int maxSpeed) {
-		this.maxSpeed = maxSpeed;
-	}
 	public String getType() {
 		return type;
 	}
@@ -25,10 +20,12 @@ public class MilitaryAircraft {
 		this.numberOfEngines = numberOfEngines;
 	}
 	
-	public MilitaryAircraft() {}
+	public MilitaryAircraft() {
+		super();
+	}
 	
-	public MilitaryAircraft(int maxSpeed, String type, int numberOfEngines) {
-		this.maxSpeed = maxSpeed;
+	public MilitaryAircraft(int maxSpeed, int capacity, int fuelCapacity, String type, int numberOfEngines) {
+		super(maxSpeed, capacity, fuelCapacity);
 		this.type = type;
 		this.numberOfEngines = numberOfEngines;
 	}
