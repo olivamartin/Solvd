@@ -3,4 +3,26 @@
   <groupId>com.Solvd</groupId>
   <artifactId>army</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name> Army Project </name>
+
+<properties>
+   <maven.compiler.source>16</maven.compiler.source>
+   <maven.compiler.target>16</maven.compiler.target>
+ </properties>
+
+<dependencies>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+    </dependencies>
+
 </project>
