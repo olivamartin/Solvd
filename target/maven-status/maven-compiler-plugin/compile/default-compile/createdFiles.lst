@@ -2,7 +2,6 @@ com\solvd\army\Models\interfaces\IExplosives.class
 com\solvd\army\Models\vehicle\Tank\Tank.class
 com\solvd\army\Models\weapon\Weapon.class
 com\solvd\army\Models\missile\Missile.class
-com\solvd\wordsCounter\StringUtils.class
 com\solvd\JavaBasics\Bicycle.class
 com\solvd\army\Models\vehicle\Helicopter\Helicopter.class
 com\solvd\army\Models\ration\Ration.class
@@ -14,6 +13,7 @@ com\solvd\army\Models\soldier\Soldier.class
 com\solvd\army\Models\exceptions\NoResponsibilities.class
 com\solvd\army\Models\exceptions\NoTimeExplosive.class
 com\solvd\JavaBasics\Test.class
+com\solvd\army\Models\officer\ranks\Rank.class
 com\solvd\JavaBasics\Sort.class
 com\solvd\army\Models\equipment\Equipment.class
 com\solvd\army\Models\officer\Officer.class

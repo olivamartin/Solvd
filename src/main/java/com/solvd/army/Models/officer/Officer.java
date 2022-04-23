@@ -1,20 +1,34 @@
 package com.solvd.army.Models.officer;
 
+import com.solvd.army.Models.officer.ranks.Rank;
+
 public class Officer {
 	
-	private String rank;
+	private Rank rank;
+	private int yearsServed;
 
-	public String getRank() {
+	public Rank getRank() {
 		return rank;
 	}
 
-	public void setRank(String rank) {
+	public void setRank(Rank rank) {
 		this.rank = rank;
 	}
 	
+	
+	
+	public int getYearsServed() {
+		return yearsServed;
+	}
+
+	public void setYearsServed(int yearsServed) {
+		this.yearsServed = yearsServed;
+	}
+
 	public Officer() {}
 
-	public Officer(String rank) {
+	public Officer(int yearsServed, Rank rank) {
+		this.yearsServed = yearsServed;
 		this.rank = rank;
 	}
 	
