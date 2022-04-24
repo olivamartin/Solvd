@@ -32,8 +32,13 @@ public class Soldier {
 		this.weight = weight;
 		this.height = height;
 	}
-	
-	
-	
 
+	@Override
+	public String toString() {
+		return "Soldier{" +
+				"name='" + name + '\'' +
+				", weight=" + weight +
+				", height=" + height +
+				'}';
+	}
 }

@@ -7,6 +7,7 @@ com\solvd\army\Models\vehicle\Helicopter\Helicopter.class
 com\solvd\army\Models\ration\Ration.class
 Run.class
 com\solvd\army\Models\exceptions\NotEnoughRank.class
+com\solvd\army\Models\ammo\ammoCaliber\AmmoCaliber$2.class
 com\solvd\army\Models\exceptions\NoBarracksCapacity.class
 com\solvd\army\Models\ammo\Ammo.class
 com\solvd\army\Models\soldier\Soldier.class
@@ -18,12 +19,16 @@ com\solvd\JavaBasics\Sort.class
 com\solvd\army\Models\equipment\Equipment.class
 com\solvd\army\Models\officer\Officer.class
 com\solvd\army\Models\division\Division.class
+com\solvd\army\Models\ammo\ammoCaliber\AmmoCaliber$1.class
 com\solvd\army\Models\exceptions\WeaponTooHeavy.class
 com\solvd\army\Models\vehicle\MilitaryAircraft\MilitaryAircraft.class
-com\solvd\army\Models\barracks\Barracks.class
+com\solvd\army\Models\ammo\ammoType\AmmoType.class
 com\solvd\army\Models\weapon\AssaultRifle\AssaultRifle.class
 com\solvd\army\Models\vehicle\Vehicle.class
 com\solvd\army\Models\armory\Armory.class
 com\solvd\army\Models\grenade\Grenade.class
+com\solvd\army\Models\ammo\ammoCaliber\AmmoCaliber.class
 com\solvd\army\Models\weapon\Pistol\Pistol.class
 com\solvd\wordsCounter\ReadFile.class
+com\solvd\army\Models\armory\barracks\Barracks.class
+com\solvd\army\Models\ammo\ammoCaliber\AmmoCaliber$3.class

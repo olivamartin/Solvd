@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.solvd.army.Models.barracks.Barracks;
+import com.solvd.army.Models.armory.barracks.Barracks;
 import com.solvd.army.Models.division.Division;
 import com.solvd.army.Models.grenade.Grenade;
 import com.solvd.army.Models.officer.Officer;
@@ -12,6 +12,9 @@ import com.solvd.army.Models.soldier.Soldier;
 import com.solvd.army.Models.weapon.AssaultRifle.AssaultRifle;
 import com.solvd.army.Models.exceptions.*;
 import org.apache.logging.log4j.*;
+
+import java.util.function.*;
+import java.time.LocalDateTime;
 
 
 public class Run {
@@ -74,11 +77,11 @@ public class Run {
 		Grenade gr = new Grenade(5,"Fragmentation",0);
 		Barracks br = new Barracks(2,"Small","Delta");
 		Division div = new Division("Armored division", "");
-		Officer of = new Officer(1, Rank.CHIEFWARRANTOFFICER2);
+		Officer of = new Officer("Jose",1, Rank.CHIEFWARRANTOFFICER2);
 		ArrayList<Soldier> soldiers = new ArrayList<Soldier>();
-		Soldier s1 = new Soldier("Martin", 1.72, 70);
-		Soldier s2 = new Soldier("Joshua", 1.75, 73.5);
-		Soldier s3 = new Soldier("Savior", 1.80, 78);
+		Soldier s1 = new Soldier("Martin",70, 1.72);
+		Soldier s2 = new Soldier("Joshua",73.5, 1.75);
+		Soldier s3 = new Soldier("Savior",78, 1.80);
 		soldiers.add(s1);
 		soldiers.add(s2);
 		soldiers.add(s3);
@@ -91,8 +94,6 @@ public class Run {
         {  
             System.out.println("Exception occured: " + e);
             logger.error("Exception occured: " + e);
-            
-            
         }  
 		
 		try  
@@ -132,15 +133,36 @@ public class Run {
             e.printStackTrace();
             logger.error("Exception occured: " + e);
         }
+
+		//Lambda functions
+
+		BiFunction<Officer, Soldier, String> func1 = (offi, sol) ->{return String.format("Officer %s is the superior of soldier %S",offi.getName(), sol.getName());};
+		System.out.println(func1.apply(of,s1));
+		BiConsumer<AssaultRifle, Integer> magazineUpgrade = (asr, ammoUpgrade) -> asr.setMagazineCapacity(ammoUpgrade);
+		magazineUpgrade.accept(ar, 50);
+		Supplier<LocalDateTime> s = () -> LocalDateTime.now();
+		LocalDateTime time = s.get();
+		Consumer<String> greeting = (x) -> System.out.println(x);
+		greeting.accept("Good morning sir");
+		Function<ArrayList<Soldier>, Integer> armyForce = (sold) ->{ return sold.size() ;};
+		System.out.println("Army force: " + armyForce.apply(soldiers));
+
+
+
+		
+
+
+
+
 		
 
 		
 
 	}
 
-	
 
-	
+
+
 
 
 }

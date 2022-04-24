@@ -1,8 +1,6 @@
 package com.solvd.army.Models.ammo.ammoCaliber;
 
-import java.lang.constant.Constable;
-
-enum ammoCaliber {
+public enum AmmoCaliber {
 
     PISTOLAMMO {
         public String getValue() {

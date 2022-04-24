@@ -1,6 +1,6 @@
 package com.solvd.army.Models.ammo.ammoType;
 
-enum ammoType {
+public enum AmmoType {
     BALL("Ball"),
     TRACE("Trace"),
     DUMMY("Dummy"),
@@ -10,7 +10,7 @@ enum ammoType {
 
     private String value;
 
-    ammoType(String value) {
+    AmmoType(String value) {
         this.value = value;
     }
 
