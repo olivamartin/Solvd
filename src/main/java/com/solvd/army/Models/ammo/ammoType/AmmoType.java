@@ -9,7 +9,7 @@ public enum AmmoType {
     TRACER("Tracer");
 
     private String value;
-
+ 
     AmmoType(String value) {
         this.value = value;
     }

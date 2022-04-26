@@ -2,17 +2,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-
 import com.solvd.army.Models.armory.barracks.Barracks;
 import com.solvd.army.Models.division.Division;
 import com.solvd.army.Models.grenade.Grenade;
 import com.solvd.army.Models.officer.Officer;
 import com.solvd.army.Models.officer.ranks.Rank;
-import com.solvd.army.Models.soldier.Soldier;
+import com.solvd.army.Models.armory.soldier.Soldier;
 import com.solvd.army.Models.weapon.AssaultRifle.AssaultRifle;
-import com.solvd.army.Models.exceptions.*;
+import com.solvd.exceptions.*;
 import org.apache.logging.log4j.*;
-
 import java.util.function.*;
 import java.time.LocalDateTime;
 
