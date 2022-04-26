@@ -2,7 +2,7 @@ package com.solvd.Reflection;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.solvd.army.Models.armory.soldier.Soldier;
+import com.solvd.army.Models.soldier.Soldier;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
